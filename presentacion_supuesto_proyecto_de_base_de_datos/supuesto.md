@@ -19,7 +19,8 @@
 	
 <p align="justify"> 
 El padrón municipal de un municipio es un servicio indispensable. Por ello, el ayuntamiento de Granadilla de Abona se propone acometer la informatización de este servicio con el objetivo de facilitar la inscripción de ciudadanos en el padrón, y disponer una serie de trámites online para que estos puedan obtener documentación sin necesidad de acudir a la sede del Consistorio.
-
+</p>
+<p align="justify"> 
 Actualmente el municipio se encuentra desbordado por el gran tiempo de espera para obtener una cita, a parte de que toda la información referente a los datos de los ciudadanos empadronados se encuentra almacenada de forma física, y los empleados, para realizar cualquier gestión, tienen que ir a buscar estos datos en los almacenes habilitados.No obstante, Granadilla de Abona acumula una población superior a los 85000 habitantes, 80 kilómetros cuadrados de extensión, y escasas oficinas para realizar todos los trámites del Padrón Municipal. Con una baja presencia física, se alargan los tiempos de espera de los ciudadanos, con esperas de hasta 10 meses para inscribirse en el padrón. 
 </p>
 
@@ -34,7 +35,9 @@ Por ello, atendiendo a las especificaciones del BOE, concretamente lo mencionado
 ## Aspectos Legales <a name="id2"></a>
 <p align='justify'>
 La solución que se ofrece cubre todos los aspectos legales mencionados en el BOE, de manera que abarcará todos los términos municipales pertenecientes al municipio Granadilla de Abona.
+</p>
 
+<p align='justify'>
 También, de acuerdo al artículo 60 del BOE, estableceremos estrictas medidas de seguridad con el objetivo de proteger y de manera confidencial los datos de los ciudadanos del Municipio. Nuestros dispositivos también estarán disponibles para que los ciudadanos puedan solicitar dejar de ser inscritos del municipio o modificar su información, esto será trasladado a los funcionarios del ayuntamiento para que puedan hacer las gestiones pertinentes.
 </p>
 </div>
