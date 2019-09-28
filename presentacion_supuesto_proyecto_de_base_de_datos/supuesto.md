@@ -3,9 +3,9 @@
 
 ### Empresa : El UrbaTech Solutions S.L
 ### Representantes de la empresa:
-    * Tomás González Martín
-    * Alien Embarec Riadi
-    * Alberto Delgado Soler
+   * Tomás González Martín
+   * Alien Embarec Riadi
+   * Alberto Delgado Soler
 
 ### Reunión : 27 de Septiembre de 2019, Granadilla de ABona
 ### Interesado:  Padrón Municipal del ayuntamiento de Granadilla de Abona, Tenerife, España
