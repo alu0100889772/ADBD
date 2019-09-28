@@ -1,6 +1,5 @@
 #  Presentación Supuesto Proyecto de Bases de Datos 
 
-
 ### Empresa :  UrbaTech Solutions S.L
 ### Representantes de la empresa:
    * Tomás González Martín
@@ -9,9 +8,6 @@
 
 ### Reunión : 27 de Septiembre de 2019, Granadilla de Abona
 ### Interesado: Ayuntamiento de Granadilla de Abona, Tenerife, España
-
-
-<div style="text-align: right"> your-text-here </div>
 
 **Índice**   
 1. [Contextualización](#id1)
@@ -62,11 +58,3 @@ La empresa se compromete a financiar abundante publicidad del servicio online po
 Se instalará una máquina para la inscripción online cada cinco calles, y dos por cada avenida, con medidas de seguridad como cámaras y envoltorio resistente para prevenir actos vandálicos. Estas máquinas tendrán replicación inmediata con la Base de Datos del Padrón Municipal.
 </p>
 </div>
-
-
-
-
-
-
-
-
