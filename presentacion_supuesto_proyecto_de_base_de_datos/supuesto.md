@@ -35,13 +35,13 @@ Por ello, atendiendo a las especificaciones del BOE, concretamente lo mencionado
 <div id='id2' />
 
 ## Aspectos Legales <a name="id2"></a>
-<p style='text-align: justify;'>
+<p align='justify'>
 La solución que se ofrece cubre todos los aspectos legales mencionados en el BOE, de manera que abarcará todos los términos municipales pertenecientes al municipio Granadilla de Abona.
 </p>
-<p style='text-align: justify;'>
+<p align='justify'>
 Por ello, atendiendo a las especificaciones del BOE, concretamente lo mencionado en los artículos 57,58 y 59,  la empresa se propone crear un portal web donde los ciudadanos podrán inscribirse y enviarán toda su documentación personal cumpliendo con el artículo 57 como por ejemplo nombre y apellidos, género, DNI, domicilio, etc, sin necesidad de trasladarse de forma física. Instalaremos máquinas en diferentes puntos del municipio para que los ciudadanos puedan obtener sus documentos, dichas máquinas tendrán lectores de documentos de identidad que también podrán usar los ciudadanos desde sus casas para que se rellene solo parte del formulario. También incluiremos abundantes manuales de ayuda en diferentes puntos del municipio.
 </p>
-<p style='text-align: justify;'>
+<p align='justify'>
 También, de acuerdo al artículo 60 del BOE, estableceremos estrictas medidas de seguridad con el objetivo de proteger y de manera confidencial los datos de los ciudadanos del Municipio. Nuestros dispositivos también estarán disponibles para que los ciudadanos puedan solicitar dejar de ser inscritos del municipio o modificar su información, esto será trasladado a los funcionarios del ayuntamiento para que puedan hacer las gestiones pertinentes.
 </p>
 </div>
@@ -49,18 +49,18 @@ También, de acuerdo al artículo 60 del BOE, estableceremos estrictas medidas d
 <div id='id3' />
 
 ## Medios técnicos <a name="id3"></a>
-<div style="text-align: justify">
+<p align='justify'>
 Dado que el Padrón Municipal es una infraestructura exigente y que requiere un gran mantenimiento, se ofrecerá integración de la base de datos con el sistema interno de la Policía Local del municipio y otras áreas del ayuntamiento para que puedan realizar las comprobaciones pertinentes respecto de las solicitudes de inscripción yendo a comprobar de forma presencial si las personas que realizaron el formulario online cumplen los requisitos especificados en la solicitud online.
-</div>
-<div style="text-align: justify">
+</p>
+<p align='justify'>
 El servicio de cita previa para realizar el trámite de forma física  no desaparecerá, se le dará un uso preferencial al trámite online, pero los funcionarios podrán aceptar en las oficinas del ayuntamiento determinadas solicitudes de inscripción, también estarán a disposición de los ciudadanos para explicar el trámite online.
-</div>
-<div style="text-align: justify">
+</p>
+<p align='justify'>
 La empresa se compromete a financiar abundante publicidad del servicio online por todas las localidades del municipio.
-</div>
-<div style="text-align: justify">
+</p>
+<p align='justify'>
 Se instalará una máquina para la inscripción online cada cinco calles, y dos por cada avenida, con medidas de seguridad como cámaras y envoltorio resistente para prevenir actos vandálicos. Estas máquinas tendrán replicación inmediata con la Base de Datos del Padrón Municipal.
-</div>
+</p>
 </div>
 
 
