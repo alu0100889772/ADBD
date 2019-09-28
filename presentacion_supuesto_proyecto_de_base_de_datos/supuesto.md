@@ -7,8 +7,8 @@
    * Alien Embarec Riadi
    * Alberto Delgado Soler
 
-### Reunión : 27 de Septiembre de 2019, Granadilla de ABona
-### Interesado:  Padrón Municipal del ayuntamiento de Granadilla de Abona, Tenerife, España
+### Reunión : 27 de Septiembre de 2019, Granadilla de Abona
+### Interesado: Ayuntamiento de Granadilla de Abona, Tenerife, España
 
 
 
