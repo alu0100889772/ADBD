@@ -17,7 +17,8 @@
 2. [Aspectos Legales](#id2)
 3. [Medios técnicos](#id3)
 <div id='id1' />
-## Contextualización<a name="id1"></a>
+
+## Contextualización <a name="id1"></a>
 	
 El padrón municipal de un municipio es un servicio indispensable de los municipios. Por ello, el ayuntamiento de Granadilla de Abona se propone acometer la informatización de este servicio con el objetivo de facilitar la inscripción de ciudadanos en el municipio, y disponer una serie de trámites online para que estos puedan obtener documentación sin necesidad de acudir a la sede del Consistorio. 
 Actualmente el municipio se encuentra desbordado por el gran tiempo de espera para obtener una cita, a parte de que toda la información referente a los datos de los ciudadanos empadronados se encuentra almacenada de forma física, y los empleados, para realizar cualquier gestión, tienen que ir a buscar estos datos en los almacenes habilitados.No obstante, Granadilla de Abona acumula una población superior a los 85000 habitantes, 80 kilómetros cuadrados de extensión, y escasas oficinas para realizar todos los trámites del Padrón Municipal. Con una escasa presencia física, se alargan los tiempos de espera de los ciudadanos, con esperas de hasta 10 meses para inscribirse en el Padrón. 
@@ -26,6 +27,7 @@ Por ello, atendiendo a las especificaciones del BOE, concretamente lo mencionado
 </div>
 
 <div id='id2' />
+
 ## Aspectos Legales <a name="id2"></a>
 
 La solución que se ofrece cubre todos los aspectos legales mencionados en el BOE, de manera que abarcará todos los términos municipales pertenecientes al municipio Granadilla de Abona.
@@ -36,7 +38,8 @@ También, de acuerdo al artículo 60 del BOE, estableceremos estrictas medidas d
 </div>
 
 <div id='id3' />
-## Medios técnicos<a name="id3"></a>
+
+## Medios técnicos <a name="id3"></a>
 Dado que el Padrón Municipal es una infraestructura exigente y que requiere un gran mantenimiento, se ofrecerá integración de la base de datos con el sistema interno de la Policía Local del municipio y otras áreas del ayuntamiento para que puedan realizar las comprobaciones pertinentes respecto de las solicitudes de inscripción yendo a comprobar de forma presencial si las personas que realizaron el formulario online cumplen los requisitos especificados en la solicitud online.
 
 El servicio de cita previa para realizar el trámite de forma física  no desaparecerá, se le dará un uso preferencial al trámite online, pero los funcionarios podrán aceptar en las oficinas del ayuntamiento determinadas solicitudes de inscripción, también estarán a disposición de los ciudadanos para explicar el trámite online.
