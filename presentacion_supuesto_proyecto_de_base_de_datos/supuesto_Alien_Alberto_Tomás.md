@@ -1,4 +1,4 @@
-#  Presentación Supuesto Proyecto de Bases de Datos 
+#  Presentación Supuesto Proyecto de Bases de Datos
 
 ### Empresa :  UrbaTech Solutions S.L
 ### Representantes de la empresa:
@@ -13,18 +13,19 @@
 1. [Contextualización](#id1)
 2. [Aspectos Legales](#id2)
 3. [Medios técnicos](#id3)
+4. [Coste de la solución](#id4)
 <div id='id1' />
 
 ## Contextualización <a name="id1"></a>
-	
-<p align="justify"> 
+
+<p align="justify">
 El padrón municipal de un municipio es un servicio indispensable. Por ello, el ayuntamiento de Granadilla de Abona se propone acometer la informatización de este servicio con el objetivo de facilitar la inscripción de ciudadanos en el padrón, y disponer una serie de trámites online para que estos puedan obtener documentación sin necesidad de acudir a la sede del Consistorio.
 </p>
-<p align="justify"> 
-Actualmente el municipio se encuentra desbordado por el gran tiempo de espera para obtener una cita, a parte de que toda la información referente a los datos de los ciudadanos empadronados se encuentra almacenada de forma física, y los empleados, para realizar cualquier gestión, tienen que ir a buscar estos datos en los almacenes habilitados.No obstante, Granadilla de Abona acumula una población superior a los 85000 habitantes, 80 kilómetros cuadrados de extensión, y escasas oficinas para realizar todos los trámites del Padrón Municipal. Con una baja presencia física, se alargan los tiempos de espera de los ciudadanos, con esperas de hasta 10 meses para inscribirse en el padrón. 
+<p align="justify">
+Actualmente el municipio se encuentra desbordado por el gran tiempo de espera para obtener una cita, a parte de que toda la información referente a los datos de los ciudadanos empadronados se encuentra almacenada de forma física, y los empleados, para realizar cualquier gestión, tienen que ir a buscar estos datos en los almacenes habilitados.No obstante, Granadilla de Abona acumula una población superior a los 85000 habitantes, 80 kilómetros cuadrados de extensión, y escasas oficinas para realizar todos los trámites del Padrón Municipal. Con una baja presencia física, se alargan los tiempos de espera de los ciudadanos, con esperas de hasta 10 meses para inscribirse en el padrón.
 </p>
 
-<p align='justify'>	
+<p align='justify'>
 Por ello, atendiendo a las especificaciones del BOE, concretamente lo mencionado en los artículos 57,58 y 59,  la empresa se propone crear un portal web donde los ciudadanos podrán inscribirse y enviarán toda su documentación personal como nombre y apellidos, género, DNI, domicilio, etc, sin necesidad de trasladarse de forma física. Se instalarán máquinas en diferentes puntos del municipio para que los ciudadanos puedan obtener sus documentos, dichas máquinas tendrán lectores de documentos de identidad que también podrán usar los ciudadanos desde sus casas para que se rellene solo parte del formulario. También incluiremos abundantes manuales de ayuda en diferentes puntos del municipio.
 </p>
 
@@ -57,4 +58,15 @@ La empresa se compromete a financiar abundante publicidad del servicio online po
 <p align='justify'>
 Se instalará una máquina para la inscripción online cada cinco calles, y dos por cada avenida, con medidas de seguridad como cámaras y envoltorio resistente para prevenir actos vandálicos. Estas máquinas tendrán replicación inmediata con la Base de Datos del Padrón Municipal.
 </p>
+</div>
+
+## Coste de la solución <a name="id4"></a>
+<div id='id3' />
+
+<p align='justify'>
+
+El coste inicial de la infraestructura será de 300000 euros, más 15000 euros mensuales que habrá que abonar durante dos años, en concepto de mantenimiento y subsanación de averías.
+
+</p>
+
 </div>
