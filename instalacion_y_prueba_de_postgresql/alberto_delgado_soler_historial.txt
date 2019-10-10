@@ -1,0 +1,52 @@
+sudo su postgres password: usuario10
+createuser miusuario
+alter role miusuario with password 'mipassword';
+createuser miusuario
+alter role miusuario with password 'mipassword';
+create user miusuario
+alter role miusuario with password 'mipassword';
+create user miusuario;
+alter role miusuario with password 'mipassword'
+;
+CREATE DATABASE pract1;
+create table usuarios (
+nombre varchar(30),
+clave varchar(10)
+);
+insert into usuarios (nombre, clave) values ('lsa','asdf');
+insert into usuarios (nombre, clave) values ('Isa','asdf');
+\dt
+\l
+usuarios
+;
+\c usuarios
+\c pract1
+\dt
+exit
+;
+\q
+\dt
+SELECT * FROM usuarios;
+DELETE FROM usuarios
+WHERE nombre = lsa;
+DELETE FROM usuarios
+WHERE clave = asdf;
+DELETE FROM usuarios
+WHERE nombre = "lsa";
+DELETE FROM usuarios
+WHERE nombre = 'lsa';
+SELECT * FROM usuarios;
+insert into usuarios (nombre, clave) values ('Pablo','jfx344');
+insert into usuarios (nombre, clave) values ('Pablo','jfx344');
+SELECT * FROM usuarios;
+DELETE FROM usuarios
+WHERE nombre = 'Pablo';
+insert into usuarios (nombre, clave) values ('Pablo','jfx344');
+insert into usuarios (nombre, clave) values ('Ana','tru3fal');
+SELECT * FROM usuarios;
+\s
+\dt
+\c pract1
+\dt
+\s
+
