@@ -10,13 +10,12 @@
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS "mydb" DEFAULT CHARACTER SET utf8 ;
-USE "mydb" ;
+CREATE SCHEMA IF NOT EXISTS "mydbFarmacia";
 
 -- -----------------------------------------------------
--- Table "mydb"."FAMILIA"
+-- Table "mydbFarmacia"."FAMILIA"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."FAMILIA" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."FAMILIA" (
   "nombre" VARCHAR(20) NOT NULL,
   "incompatibilidades" VARCHAR(100) NULL,
   PRIMARY KEY ("nombre"))
@@ -24,9 +23,9 @@ CREATE TABLE IF NOT EXISTS "mydb"."FAMILIA" (
 
 
 -- -----------------------------------------------------
--- Table "mydb"."ENFERMEDAD"
+-- Table "mydbFarmacia"."ENFERMEDAD"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."ENFERMEDAD" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."ENFERMEDAD" (
   "nombre" VARCHAR(20) NOT NULL,
   "sintoma" VARCHAR(100) NULL,
   PRIMARY KEY ("nombre"))
@@ -34,29 +33,29 @@ CREATE TABLE IF NOT EXISTS "mydb"."ENFERMEDAD" (
 
 
 -- -----------------------------------------------------
--- Table "mydb"."FAMILIA_ENFERMEDAD"
+-- Table "mydbFarmacia"."FAMILIA_ENFERMEDAD"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."FAMILIA_ENFERMEDAD" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."FAMILIA_ENFERMEDAD" (
   "nombre_enfermedad" VARCHAR(20) NOT NULL,
   "nombre_familia" VARCHAR(20) NOT NULL,
   PRIMARY KEY ("nombre_enfermedad", "nombre_familia"),
   CONSTRAINT "nombre_familia"
     FOREIGN KEY ("nombre_familia")
-    REFERENCES "mydb"."FAMILIA" ("nombre")
+    REFERENCES "mydbFarmacia"."FAMILIA" ("nombre")
     ON DELETE RESTRICT
     ON UPDATE CASCADE,
   CONSTRAINT "nombre_enfermedad"
     FOREIGN KEY ("nombre_enfermedad")
-    REFERENCES "mydb"."ENFERMEDAD" ("nombre")
+    REFERENCES "mydbFarmacia"."ENFERMEDAD" ("nombre")
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 ;
 
 
 -- -----------------------------------------------------
--- Table "mydb"."LABORATORIO"
+-- Table "mydbFarmacia"."LABORATORIO"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."LABORATORIO" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."LABORATORIO" (
   "codigo_lab" INT NOT NULL,
   "contacto" VARCHAR(45) NULL,
   "calle" VARCHAR(45) NULL,
@@ -69,9 +68,9 @@ CREATE TABLE IF NOT EXISTS "mydb"."LABORATORIO" (
 
 
 -- -----------------------------------------------------
--- Table "mydb"."MEDICAMENTOS"
+-- Table "mydbFarmacia"."MEDICAMENTOS"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."MEDICAMENTOS" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."MEDICAMENTOS" (
   "codigo" INT NOT NULL,
   "nombre" VARCHAR(45) NULL,
   "posologia" VARCHAR(45) NULL,
@@ -82,36 +81,36 @@ CREATE TABLE IF NOT EXISTS "mydb"."MEDICAMENTOS" (
   PRIMARY KEY ("codigo"),
   CONSTRAINT "laboratorio"
     FOREIGN KEY ("laboratorio")
-    REFERENCES "mydb"."LABORATORIO" ("codigo_lab")
+    REFERENCES "mydbFarmacia"."LABORATORIO" ("codigo_lab")
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 ;
 
 
 -- -----------------------------------------------------
--- Table "mydb"."MEDICAMENTOS_FAMILIA"
+-- Table "mydbFarmacia"."MEDICAMENTOS_FAMILIA"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."MEDICAMENTOS_FAMILIA" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."MEDICAMENTOS_FAMILIA" (
   "codigo_med" INT NOT NULL,
   "nombre_familia" VARCHAR(45) NOT NULL,
   PRIMARY KEY ("codigo_med", "nombre_familia"),
   CONSTRAINT "cod_medicamento"
     FOREIGN KEY ("codigo_med")
-    REFERENCES "mydb"."MEDICAMENTOS" ("codigo")
+    REFERENCES "mydbFarmacia"."MEDICAMENTOS" ("codigo")
     ON DELETE RESTRICT
     ON UPDATE CASCADE,
   CONSTRAINT "nombre_familia"
     FOREIGN KEY ("nombre_familia")
-    REFERENCES "mydb"."FAMILIA" ("nombre")
+    REFERENCES "mydbFarmacia"."FAMILIA" ("nombre")
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 ;
 
 
 -- -----------------------------------------------------
--- Table "mydb"."COMPRA"
+-- Table "mydbFarmacia"."COMPRA"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."COMPRA" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."COMPRA" (
   "anio" INT NOT NULL,
   "mes" INT NOT NULL,
   "dia" INT NOT NULL,
@@ -124,9 +123,9 @@ CREATE TABLE IF NOT EXISTS "mydb"."COMPRA" (
 
 
 -- -----------------------------------------------------
--- Table "mydb"."COMPRA_MEDICAMENTOS"
+-- Table "mydbFarmacia"."COMPRA_MEDICAMENTOS"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."COMPRA_MEDICAMENTOS" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."COMPRA_MEDICAMENTOS" (
   "COMPRA_anio" INT NOT NULL,
   "COMPRA_mes" INT NOT NULL,
   "COMPRA_dia" INT NOT NULL,
@@ -140,21 +139,21 @@ CREATE TABLE IF NOT EXISTS "mydb"."COMPRA_MEDICAMENTOS" (
   PRIMARY KEY ("COMPRA_anio", "COMPRA_mes", "COMPRA_dia", "COMPRA_hora", "COMPRA_minuto", "COMPRA_segundo", "MEDICAMENTOS_codigo"),
   CONSTRAINT "fk_COMPRA_has_MEDICAMENTOS_COMPRA1"
     FOREIGN KEY ("COMPRA_anio" , "COMPRA_mes" , "COMPRA_dia" , "COMPRA_hora" , "COMPRA_minuto" , "COMPRA_segundo")
-    REFERENCES "mydb"."COMPRA" ("anio" , "mes" , "dia" , "hora" , "minuto" , "segundo")
+    REFERENCES "mydbFarmacia"."COMPRA" ("anio" , "mes" , "dia" , "hora" , "minuto" , "segundo")
     ON DELETE RESTRICT
     ON UPDATE CASCADE,
   CONSTRAINT "fk_COMPRA_has_MEDICAMENTOS_MEDICAMENTOS1"
     FOREIGN KEY ("MEDICAMENTOS_codigo")
-    REFERENCES "mydb"."MEDICAMENTOS" ("codigo")
+    REFERENCES "mydbFarmacia"."MEDICAMENTOS" ("codigo")
     ON DELETE RESTRICT
     ON UPDATE CASCADE)
 ;
 
 
 -- -----------------------------------------------------
--- Table "mydb"."CLIENTE"
+-- Table "mydbFarmacia"."CLIENTE"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."CLIENTE" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."CLIENTE" (
   "cc" VARCHAR(20) NOT NULL,
   "nombre" VARCHAR(45) NULL,
   "dia_pagos" INT NULL,
@@ -163,9 +162,9 @@ CREATE TABLE IF NOT EXISTS "mydb"."CLIENTE" (
 
 
 -- -----------------------------------------------------
--- Table "mydb"."PAGO_CREDITO"
+-- Table "mydbFarmacia"."PAGO_CREDITO"
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS "mydb"."PAGO_CREDITO" (
+CREATE TABLE IF NOT EXISTS "mydbFarmacia"."PAGO_CREDITO" (
   "anio" INT NOT NULL,
   "mes" INT NOT NULL,
   "cliente" VARCHAR(20) NOT NULL,
@@ -174,22 +173,21 @@ CREATE TABLE IF NOT EXISTS "mydb"."PAGO_CREDITO" (
   "COMPRA_dia" INT NOT NULL,
   "COMPRA_hora" INT NOT NULL,
   "COMPRA_minuto" INT NOT NULL,
-  "COMPRA_minuto" INT NOT NULL,
+  "COMPRA_segundo" INT NOT NULL,
   "dia" INT NULL,
   "hora" INT NULL,
   "minuto" INT NULL,
   "segundo" INT NULL,
   "cant_abonada" DECIMAL NULL,
-  PRIMARY KEY ("anio", "mes", "cliente", "COMPRA_anio", "COMPRA_mes", "COMPRA_dia", "COMPRA_hora", "COMPRA_minuto", "COMPRA_minuto"),
+  PRIMARY KEY ("anio", "mes", "cliente", "COMPRA_anio", "COMPRA_mes", "COMPRA_dia", "COMPRA_hora", "COMPRA_minuto", "COMPRA_segundo"),
   CONSTRAINT "fecha_compra"
-    FOREIGN KEY ("COMPRA_anio" , "COMPRA_mes" , "COMPRA_dia" , "COMPRA_hora" , "COMPRA_minuto" , "COMPRA_minuto")
-    REFERENCES "mydb"."COMPRA" ("anio" , "mes" , "dia" , "hora" , "minuto" , "segundo")
+    FOREIGN KEY ("COMPRA_anio" , "COMPRA_mes" , "COMPRA_dia" , "COMPRA_hora" , "COMPRA_minuto" , "COMPRA_segundo")
+    REFERENCES "mydbFarmacia"."COMPRA" ("anio" , "mes" , "dia" , "hora" , "minuto" , "segundo")
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT "cliente"
     FOREIGN KEY ("cliente")
-    REFERENCES "mydb"."CLIENTE" ("cc")
+    REFERENCES "mydbFarmacia"."CLIENTE" ("cc")
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ;
-
