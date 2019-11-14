@@ -1,12 +1,14 @@
-CREATE OR REPLACE FUNCTION laboratorio_propio() RETURNS trigger AS $laboratorio_propio$
-    BEGIN
-        UPDATE "mydbFarmacia"."MEDICAMENTOS"
-            SET "laboratorio" = 0
-                WHERE "mydbFarmacia"."MEDICAMENTOS"."laboratorio" IS NULL;
-        RETURN NULL;
-    END;
-$laboratorio_propio$ LANGUAGE plpgsql;
+CREATE OR REPLACE FUNCTION compra_medicamento() RETURNS trigger AS $compra_medicamento$
+    	BEGIN
+		UPDATE "mydbFarmacia"."COMPRA"
+		SET  "importe" = "importe" + NEW."importe_linea"
+			WHERE NEW."COMPRA_anio" = "mydbFarmacia"."COMPRA"."anio" AND NEW."COMPRA_mes" = "mydbFarmacia"."COMPRA"."mes" AND NEW."COMPRA_dia" = "mydbFarmacia"."COMPRA"."dia"
+			AND NEW."COMPRA_minuto" = "mydbFarmacia"."COMPRA"."minuto" AND NEW."COMPRA_segundo" = "mydbFarmacia"."COMPRA"."segundo";
+
+	RETURN NULL;
+	END;
+$compra_medicamento$ LANGUAGE plpgsql;
 
 
-CREATE TRIGGER laboratorio_propio BEFORE INSERT ON "mydbFarmacia"."MEDICAMENTOS"
-    FOR EACH ROW EXECUTE PROCEDURE laboratorio_propio();
+CREATE TRIGGER compra_medicamento AFTER INSERT ON "mydbFarmacia"."COMPRA_MEDICAMENTOS"
+	FOR EACH ROW EXECUTE PROCEDURE compra_medicamento();
