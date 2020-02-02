@@ -14,3 +14,7 @@ Gestión  de un hotel en cuanto a sus empleados, clientes, habitaciones, las rel
 [ScriptCreacion](https://drive.google.com/file/d/1N43llesIo7VEi0wBNlXvcLOMVP5SBYLt/view?usp=sharing)  
 [ASIClases](https://docs.google.com/document/d/1Z0KPXRlAldbL2V9q8CDO0S4ByV-2Wv9bZeMsidZjfnU/edit?usp=sharing)  
 [GrafoRelacional](https://docs.google.com/document/d/15_YwPaTi3PgiiQvS3SEVHe_Lnd6bVZ5UIbSZcb_ljIQ/edit?usp=sharing)
+
+## Código del proyecto
+[Triggers](https://github.com/alu0100889772/ADBD/blob/master/proyecto_final_hotel/src/triggers.sql)  
+[Base de datos](https://github.com/alu0100889772/ADBD/blob/master/proyecto_final_hotel/src/hotel.sql)  
